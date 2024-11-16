@@ -1,0 +1,124 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    margin: 0px;
+    padding: 0%;
+   
+   
+    
+
+}
+
+.navbar-container{
+    background-color:hsl(195, 92%, 62%);
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   
+ 
+
+    
+}
+
+.logo-container{
+    display: inline;
+    float: left;
+    margin-right: 5rem;
+}
+
+.logoName{
+
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.navbar-header .list{
+    margin-right: 1rem;
+    display: flex;
+    gap: 2em;
+    padding: .5em;
+    justify-content: space-between;
+      
+    
+}
+
+.bars-head:hover{
+    
+    font-size: 1.1em;
+}
+
+.bars-head a{
+   text-decoration: none;
+   color: aliceblue;
+ 
+}
+
+.bars-head{
+    list-style-type: none;
+}
+
+ #icon{
+    display: none;
+   
+}
+
+
+@media only screen and (max-width: 600px) {
+    #icon{
+        display: inline;
+        color: white;
+        margin: 12px;
+        float:right;
+
+    }
+
+    #icon:hover{
+        cursor: pointer;
+    }
+    
+    .navbar-header .list{
+        display: block;
+        background-color: hsl(210, 100%, 72%);
+        margin-top: 2.5rem;
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+        
+    }
+    .navbar-header .hideList{
+        display: none;
+    height: 0vh;
+    overflow:hidden;
+
+}
+
+
+
+    .bars-head a{
+       
+        color: rgb(255, 255, 255);
+      
+     }
+
+     .bars-head{
+        padding: 10px;
+     }
+
+     .bars-head:hover{
+        background-color: hsl(201, 100%, 72%);;
+     }
+
+   
+
+     
+    
+}
+
+
+
+
+
