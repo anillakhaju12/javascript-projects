@@ -1,0 +1,293 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    color: aliceblue;
+    z-index: 2;
+}
+
+.nav-container-fixed {
+    position: fixed;
+    background-color: #ededed;
+    color: #000;
+    margin: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 20;
+}
+.nav-container-fixed .nav-header a{
+    color: #000;
+}
+
+
+.company-logo i{
+    float: left;
+    font-size: 1.5em;
+    margin:2px 7px ;
+}
+
+.company-logo h1{
+    position: relative;
+    margin-left: 1.5em;
+   overflow: hidden;
+}
+
+.bars-icon{
+    display: none;
+    
+}
+
+.bars-icon:hover{
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.nav-header ul{
+    display: flex;
+    font-size: 1.2em;
+    
+}
+.nav-header a{
+    color: #fff;
+}
+.nav-header a:hover{
+    font-size: 1.1em;
+}
+
+.nav-header-name{
+    padding-right: 2em;
+
+}
+
+.home-section {
+    top: 0%;
+    height: 100vh;
+    width: 100%;   
+    
+}
+
+.background-img{
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+     object-fit: cover;
+    position: absolute;
+    z-index: -4;
+
+}
+
+.home-body{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.home-body .header{
+    font-size: 3em;
+}
+.home-body p{
+    font-size: 12px;
+    padding: 4px;
+    margin-bottom:1em ;
+}
+.home-body a{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 1.5em;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: .9em;
+}
+.home-body a:hover{
+    background-color: #fff;
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+}
+.home-section::after{
+    content: "";
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background-color: hsl(0, 0%, 0%, .7);
+}
+
+.product-section,.about-section, .service-section{
+    height: 70vh;
+    width: 100%;
+}
+.header{
+    text-align: center;
+    font-size: 2em;  
+    
+}
+
+.footer-container{
+    background-color: rgb(3, 49, 114);
+    height: 8vh;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: .8em;
+    color: #fff;
+}
+
+.footer-container h3{
+    padding: 1em;
+}
+
+.home-redirector{
+    display: inline;
+    float: right;
+    position: fixed;
+    top: 85%;
+    left:90%;
+    z-index: 6;
+    padding: .6em .8em ;
+    border-radius: 6px;
+    background-color: #000000;
+    animation: pump 2s ease-in-out infinite;
+}
+
+.home-redirector i{
+    color:white;
+}
+
+.home-redirector-hide{
+    display: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .navbar-container{
+        color: #000;
+        display: block;
+        z-index: 5;
+        margin: 0;
+        padding: 1em 1em 0em 1em;
+        background-color: #ededed;
+    }
+    .nav-container-fixed{
+        color: #000;
+        position: fixed;  
+    }
+
+    .nav-container-fixed .bars-icon{
+        position: fixed;
+        top: 1em;
+        color: #000;
+        left: 95%;
+        z-index: 9;
+    }
+    .company-logo{
+        margin-bottom: 1em;
+        
+    }
+    .bars-icon{
+        display: inline;
+        float: right;
+        font-size: 1.15em;
+        font-weight: bolder;
+        position: relative;
+        top: -2em;
+        
+    }
+    .nav-header{
+        display: block;
+        height: 0;
+        overflow: hidden;   
+    }
+    .nav-header .list{
+        display: inline;
+    }
+
+    .nav-header-show{
+        height: auto !important;
+        
+        animation: slideFromTop 1s ease-in-out;
+     }
+
+   
+    .nav-header ul li{
+       
+        padding-bottom: 10px ;
+        position: relative;
+        left: 1.2rem;
+    }
+
+    .list a{
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #000;
+    }
+    .list a:hover{
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    .home-section {
+        height: 100vh;   
+        position:relative;
+    }    
+    
+}
+
+@keyframes slideFromTop {
+    0%{transform: translateY(-10%)}
+    
+}
+
+@keyframes pump {
+    0% {
+        transform: scale(0.8);
+    }
+    10% {
+        transform: scale(.9);
+    }
+    20% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demo with navigation bar on scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="header-section"  id="home">
+        <nav class="navbar-container" >
+            <div class="company-logo">
+                <i class="fa-solid fa-landmark"></i>
+                <h1 class="company-name">Icon Nepal</h1>
+            </div>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-header">
+                <ul class="list">
+                    <li><a href="#home" class="nav-header-name">Home</a></li>
+                    <li><a href="#product" class="nav-header-name">Product</a></li>
+                    <li><a href="#about" class="nav-header-name">About</a></li>
+                    <li><a href="#service" class="nav-header-name">Services</a></li>
+                </ul>
+            </div>
+            
+
+        </nav>
+    </header>
+    <section class="home-section">
+        <img src="./paint-image-2.jpg" alt="" class="background-img">
+        <div class="home-body">
+            <h1 class="header">Icon Nepal</h1>
+            <p class="home-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit expedita voluptatibus facilis nobis repellendus totam dolor perferendis, doloribus delectus molestias, fuga cumque minima repudiandae corrupti. Distinctio, tempore maiores dolore repudiandae a laudantium sapiente, libero alias iure provident tenetur aperiam iusto!</p>
+            <a href="#product" id="product-finder"> Our product</a>
+        </div>
+
+    </section>
+    <section class="product-section" id="product">
+        <div class="header">
+            <h1>
+                Product
+            </h1>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="header">
+            <h1>
+                About
+            </h1>
+        </div>
+    </section>
+    <section class="service-section" id="service">
+        <div class="header">
+            <h1>
+                Service
+            </h1>
+        </div>
+    </section>
+    <footer class="footer-container">
+        <h3>Copyright &#169;Icon Nepal Company <b id="year"></b>. All Rights Reserved </h3>
+    </footer>
+    <div class="home-redirector">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
