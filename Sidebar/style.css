@@ -1,0 +1,131 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 0em;
+    padding:0em;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.icon-bar{
+    margin: 1rem;
+    float: right;
+    padding: 0.5em;
+    font-size: 1.5em;
+   
+}
+ 
+.icon-bar:hover{
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+.list{
+    background-color: hsl(202, 100%, 75%);
+    width: 30%;
+    height: 100vh;
+    padding: 1em;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    
+    
+}
+
+.hideList{
+   display: none;
+    
+}
+
+
+.header-logo{
+    display: inline;
+
+    font-size: 2em;
+    color: aliceblue;
+    
+    text-shadow: 4px 2px 4px hsl(242, 84%, 44%);
+}
+
+ .close-bar{
+    display: inline;
+    float: right;
+    color: rgb(192, 4, 4);
+    font-size: 1.5em;
+   
+}
+.close-bar:hover{
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+
+.bar-head{
+    font-size: 1.3rem;
+   
+    color: white;
+    
+}
+
+.list li{
+    padding-bottom: 12px;
+    
+}
+
+.list li:hover{
+    background-color:hsl(211, 100%, 75%);
+    font-size: 1.54em;
+}
+
+.list .logos{
+   text-align: center;
+   margin-top: 10rem;
+   font-size: 1.6em;
+
+}
+
+.fa-brands:hover{
+    font-size: 1.2em;
+}
+
+.fa-brands.fa-square-facebook{
+    color: rgb(0, 98, 255);
+    margin-right: 9px;
+
+    
+    
+}
+
+.fa-brands.fa-instagram{
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+    color:white;
+    margin-right: 9px;
+    border-radius: 5px;
+    
+}
+
+.fa-brands.fa-square-x-twitter{
+    margin-right: 9px;
+}
+
+.fa-brands.fa-square-whatsapp{
+    margin-right: 9px;
+    color:hsl(128, 77%, 45%);
+}
+
+@media  only screen and (max-width:600px) {
+    .list{
+      
+        width: 100%;
+        height: 100vh;  
+    }
+
+    
+}
+
+@keyframes slideLeft {
+    0%{transform: translateX(-100%)}
+    
+}
